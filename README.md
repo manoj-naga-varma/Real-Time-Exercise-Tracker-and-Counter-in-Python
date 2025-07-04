@@ -10,7 +10,7 @@ This project is a real-time computer vision application that tracks human body m
 - 🔢 Push-up and squat counter based on joint angles  
 - 📐 Angle calculation using landmark positions  
 - 📊 Live feedback on movement stages and count  
-- 🌐 Flask + HTML-based web interface for app version  
+- 🌐 Flask + HTML based web interface for app version  
 - 📦 Modular structure to easily expand to more exercises  
 
 ---
@@ -27,7 +27,7 @@ This project is a real-time computer vision application that tracks human body m
 
 ## 📸 Sample Output
 
-
+> *(Insert screenshot or demo GIF here)*
 
 ```bash
 +-------------------------+
@@ -53,24 +53,44 @@ This project is a real-time computer vision application that tracks human body m
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/manoj-naga-varma/Real-Time-Exercise-Tracker-and-Counter-in-Python.git
-cd Real-Time-Exercise-Tracker-and-Counter-in-Python
+git clone https://github.com/your-username/exercise-tracker.git
+cd exercise-tracker
 pip install -r requirements.txt
 ```
 
 ---
 
-### 🏃 Run the Push-up Tracker
+## ▶️ Running the Project
+
+### 1. Run each counter file individually
+
+You can test each exercise counter one by one:
+
+#### ✅ Run the Push-up Counter:
 
 ```bash
-
-python Pushups.py
-
+python pushup_counter.py
 ```
+
+#### ✅ Run the Squat Counter:
+
+```bash
+python squat_counter.py
+```
+
+#### ✅ Run the General Repetition Counter:
+
+```bash
+python rep_counter.py
+```
+
+Each script opens your webcam and displays a live counter based on body movement.
 
 ---
 
-### 🌐 Run the Flask Web App
+### 2. Run the Combined Web Application
+
+After testing the individual counters, run the integrated Flask web app:
 
 ```bash
 cd app
@@ -79,6 +99,8 @@ python app.py
 
 Then open your browser and go to:  
 [http://localhost:5000](http://localhost:5000)
+
+This web interface allows access to all exercise tracking functions from one place.
 
 ---
 
@@ -98,14 +120,5 @@ exercise-tracker/
 └── requirements.txt         # Python dependencies
 ```
 
-
 ---
 
-## 🤝 Contributing
-
-Pull requests are welcome! If you find bugs or want to add new features (e.g., more exercises, dashboard, API), feel free to contribute.
-
----
-
-
----
